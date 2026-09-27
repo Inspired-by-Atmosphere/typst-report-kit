@@ -1,0 +1,4 @@
+# keep line endings stable for everyone
+* text=auto eol=lf
+*.pdf binary
+*.png binary

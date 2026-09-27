@@ -1,0 +1,29 @@
+# Build artifacts (never commit compiled output)
+*.pdf
+**/*.build/
+.build/
+_build/
+
+# Vendored Typst binaries / archives (install Typst yourself, see README)
+tools/
+*.zip
+*.exe
+*.dll
+
+# Backups
+*.bak
+*.bak_*
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
