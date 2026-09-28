@@ -6,6 +6,29 @@ typography. Ships the reusable theme, five alternative palettes for comparison,
 and copy-paste examples (cover, callouts, verdict strip, badges, checklist,
 timeline, flowchart).
 
+![The example report rendered by this theme: cover, a component page, and a third page](docs/preview/preview.png)
+
+*Rendered straight from the code in this repo with `typst compile --root . examples/generic-report.typ` — nothing hand-drawn.*
+
+Five candidate palettes side by side: [`docs/preview/showcase.png`](docs/preview/showcase.png)
+
+## Quick start (60 seconds)
+
+```bash
+git clone https://github.com/Inspired-by-Atmosphere/typst-report-kit.git
+cd typst-report-kit
+typst compile --root . examples/generic-report.typ    # -> examples/generic-report.pdf
+```
+
+The only requirement is the single-file [Typst binary](https://github.com/typst/typst/releases)
+(0.15+). No Node, no npm, no Python, no LaTeX. The first compile downloads two
+packages (`codly`, `fletcher`) from the Typst universe once; after that it runs
+offline.
+
+Open `examples/generic-report.typ`, replace the placeholder text with your own,
+and you get the document shown above. To re-skin it, edit the eleven color tokens
+at the top of `theme.typ` — nothing else.
+
 ## Why
 
 Most "nice-looking PDF" pipelines for Chinese/English mixed reports end up either
@@ -39,7 +62,7 @@ typst-report-kit/
 └── CHANGELOG.md
 ```
 
-## Quickstart
+## Quickstart, step by step
 
 1. **Install Typst ≥ 0.15** — download the binary for your platform from the
    official releases page (`https://github.com/typst/typst/releases`), or use

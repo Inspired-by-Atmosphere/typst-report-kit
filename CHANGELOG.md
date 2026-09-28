@@ -3,9 +3,11 @@
 All notable changes to this project are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
-## [0.1.0] - 2026-01-01
+## [0.1.0] - 2026-09-28
 
 ### Added
+- `docs/preview/`: preview images (`preview.png`, `showcase.png`) rendered from
+  this repo's own sources and used by the READMEs.
 - `theme.typ`: warm-minimal design tokens (11 colors) and components —
   `card()`, `verdict()`, `badge()`, `check-item()`, `timeline()`,
   `cover()`, `report()`.

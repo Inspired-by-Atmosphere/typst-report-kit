@@ -2,6 +2,24 @@
 
 一套小巧、有主见的 **Typst 正式报告 / 书刊主题**——暖白纸底、墨色文字、一抹绿色强调色、细发丝边框、克制的编辑感排版。仓库包含可复用主题本体、五套候选配色对比样张，以及可直接照抄的示例（封面、卡片、结论条、徽章、清单、时间线、流程图）。
 
+![本主题渲染出的示例报告：封面、组件页与第三页](docs/preview/preview.png)
+
+*图片就是这个仓库里的代码跑出来的（`typst compile --root . examples/generic-report.typ`），不是画的示意图。*
+
+五套候选配色并排对比：[`docs/preview/showcase.png`](docs/preview/showcase.png)
+
+## 快速上手（60 秒）
+
+```bash
+git clone https://github.com/Inspired-by-Atmosphere/typst-report-kit.git
+cd typst-report-kit
+typst compile --root . examples/generic-report.typ    # 生成 examples/generic-report.pdf
+```
+
+唯一的前置条件是一个单文件 [Typst 二进制](https://github.com/typst/typst/releases)（0.15 以上）。不需要 Node、npm、Python，也不需要 LaTeX。首次编译会从 Typst universe 拉取 `codly` 与 `fletcher` 两个包，之后即可离线运行。
+
+打开 `examples/generic-report.typ`，把占位文字换成你自己的内容，得到的就是上面那张图。想换风格就改 `theme.typ` 顶部的十一个色值令牌——别处不用动。
+
 ## 为什么做这个
 
 中英混排的"好看的 PDF"管线，通常不是落到沉重的 HTML 转 PDF 工具链，就是落到一堆手工 Typst 文件里——抄来抄去，最后每个文件都不一样。本仓库把一个这样的文件抽成了：
@@ -30,7 +48,7 @@ typst-report-kit/
 └── CHANGELOG.md
 ```
 
-## 快速开始
+## 快速开始（分步详解）
 
 1. **装 Typst ≥ 0.15**——到官方发布页下载对应平台的二进制文件（`https://github.com/typst/typst/releases`），或 `cargo install typst-cli`。不需要 npm，不需要 Node。
 2. **编译示例**（首次编译会从 Typst universe 拉取 `codly` 与 `fletcher` 两个包，所以需要一次联网）：
